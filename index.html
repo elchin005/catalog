@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Product Catalog</h1>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+    <select id="filterBrand">
+      <option value="">All Brands</option>
+      <option value="BrandX">BrandX</option>
+      <option value="UrbanWear">UrbanWear</option>
+      <option value="CoolFit">CoolFit</option>
+    </select>
+
+    <select id="filterMaterial">
+      <option value="">All Materials</option>
+      <option value="Cotton">Cotton</option>
+      <option value="Fleece">Fleece</option>
+      <option value="Polyester">Polyester</option>
+    </select>
+
+    <select id="filterColor">
+      <option value="">All Colors</option>
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+    </select>
+
+    <input type="text" id="searchBar" placeholder="Search description, ID...">
+  </div>
+
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Brand</th>
+        <th>Image</th>
+        <th>Material</th>
+        <th>Color</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="ID">1101</td>
+        <td data-label="Brand">BrandX</td>
+        <td data-label="Image"><img src="https://via.placeholder.com/100x100?text=Red+Shirt" alt="Red Shirt"></td>
+        <td data-label="Material">Cotton</td>
+        <td data-label="Color">Red</td>
+        <td data-label="Description">Soft cotton t-shirt for daily wear</td>
+      </tr>
+      <tr>
+        <td data-label="ID">1102</td>
+        <td data-label="Brand">UrbanWear</td>
+        <td data-label="Image"><img src="https://via.placeholder.com/100x100?text=Blue+Hoodie" alt="Blue Hoodie"></td>
+        <td data-label="Material">Fleece</td>
+        <td data-label="Color">Blue</td>
+        <td data-label="Description">Warm fleece-lined hoodie with zip</td>
+      </tr>
+      <tr>
+        <td data-label="ID">1103</td>
+        <td data-label="Brand">CoolFit</td>
+        <td data-label="Image"><img src="https://via.placeholder.com/100x100?text=Green+Cap" alt="Green Cap"></td>
+        <td data-label="Material">Polyester</td>
+        <td data-label="Color">Green</td>
+        <td data-label="Description">Breathable adjustable cap for all sizes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
